@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        main {
+            flex-direction: column;
+        }
+
+        header nav {
+            padding: 30px;
+            text-align: right;
+            display: block;
+            font-size: 20px;
+        }
+
+        .about {
+            padding-left: 15vw;
+            padding-right: 15vw;
+            margin-top: 50px;
+            display: flex;
+            text-align: center;
+        }
+
+        .aboutme {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .about img {
+            width: 243px;
+            height: 243px;
+            border-radius: 50%;
+            margin: 30px;
+        }
+
+        .myButton {
+            box-shadow: inset 0px 39px 0px -24px #e67a73;
+            background-color: #e4685d;
+            border-radius: 4px;
+            border: 1px solid #ffffff;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 15px;
+            padding: 6px 15px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #b23e35;
+        }
+
+        .myButton:hover {
+            background-color: #eb675e;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .recent {
+            background-color: #EDF7FA;
+            padding-left: 15vw;
+            padding-right: 15vw;
+            padding-bottom: 70px;
+            padding-top: 10px;
+        }
+
+        .recent #recentGroup {
+            display: flex;
+        }
+
+        .recent #recentGroup #viewall {
+            right: 225px;
+            position: absolute;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 1rem;
+        }
+
+        .card {
+            display: flex;
+        }
+
+        .card div {
+            background-color: white;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: 2%;
+        }
+
+        #designPattern,
+        #iconDesign {
+            display: flex;
+        }
+
+        .space {
+            margin: 1rem 1rem;
+        }
+
+        .exp {
+            padding-left: 15vw;
+            padding-right: 15vw;
+        }
+
+        .featured {
+            display: flex;
+            align-items: center;
+        }
+
+        .featured div {
+            padding-left: 2%;
+        }
+
+        .year {
+            background-color: black;
+            margin-right: 1rem;
+            padding: 7px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        .featured div div {
+            display: flex;
+        }
+
+        .point {
+            color: gray;
+        }
+
+        .down {
+            text-align: center;
+        }
+
+        .down img {
+            width: 20px;
+            margin: 20px;
+        }
+
+        .down div {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="works.html" id="works">Works</a>
+            <a href="blog.html" id="blog">Blog</a>
+            <a href="index.html" id="contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="about">
+                <div class="aboutme">
+                    <h1><b>Hi, I am Sakaorat, <br> Web Developer</b></h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <br>
+                    <a href="#" class="myButton">Download Resume</a>
+                </div>
+                <div style="width: 35%;"></div>
+                <div>
+                    <img src="./picture/profile.jpg" alt="profile">
+                </div>
+            </div>
+            <div class="recent">
+                <div id="recentGroup">
+                    <div>
+                        <p><b>Recent posts</b></p>
+                    </div>
+                    <div id="viewall">
+                        <p>View all</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <h1>Making a design system from scratch</h1>
+                        <div id="designPattern">
+                            <p>12 Feb 2020</p>
+                            <p class="space">|</p>
+                            <p>Design, Pattern</p>
+                        </div>
+                        <div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat
+                                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+
+                    </div>
+                    <div style="background-color: #EDF7FA;"></div>
+                    <div>
+                        <h1>Creating pixel perfect icons in Figma</h1>
+                        <div id="iconDesign">
+                            <p>12 Feb 2020</p>
+                            <p class="space">|</p>
+                            <p>Figma, Icon Design</p>
+                        </div>
+                        <div>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat
+                                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="exp">
+                <h3>Featured works</h3>
+                <div class="featured">
+                    <img src="./picContact/1.jfif" alt="1" style="width: 246px; height: 180px;">
+                    <div>
+                        <h2>Designing Dashboards</h2>
+                        <div>
+                            <p class="year">2020</p>
+                            <div>
+                                <p class="point">Dashboard</p>
+                            </div>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="featured">
+                    <img src="./picContact/2.jpeg" alt="2" style="width: 246px; height: 180px;">
+                    <div>
+
+                        <h2>Vibrant Portraits of 2020</h2>
+                        <div>
+                            <p class="year">2018</p>
+                            <div>
+                                <p class="point">Illustration</p>
+                            </div>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="featured">
+                    <img src="./picContact/3.jpg" alt="3" style="width: 246px; height: 180px;">
+                    <div>
+                        <h2>36 Days of Malayalam type</h2>
+                        <div>
+                            <p class="year">2018</p>
+                            <div>
+                                <p class="point">Typography</p>
+                            </div>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat
+                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="down">
+            <div>
+                <img src="./picContact/square-facebook.svg" alt="facebook logo">
+                <img src="./picContact/instagram.svg" alt="instagram logo">
+                <img src="./picContact/twitter.svg" alt="twitter logo">
+                <img src="./picContact/linkedin.svg" alt="linkedin logo">
+            </div>
+            <p>Copyright ©2020 All rights reserved </p>
+        </div>
+    </footer>
+</body>
+
+</html>
